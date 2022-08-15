@@ -7,7 +7,6 @@ import Footer from "./Component/Footer/Footer";
 import web3 from './Component/web3/web3'
 
 function App() {
- console.log(web3.version);
   return (
     <BrowserRouter>
     <Header />
