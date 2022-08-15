@@ -1,0 +1,126 @@
+.nav-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-wrap ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.mode-sound-wrap li {
+    margin-right: 10px;
+}
+
+.dropdown-list-wrap li {
+    margin-left: 10px;
+}
+
+.dropdown-list-wrap li button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-dark {
+    border-radius: 5px;
+    background-color: #212529;
+    border-color: #212529;
+}
+
+.dropdown-list-wrap li button::after {
+    margin-left: 5px;
+}
+
+.dropdown-list-wrap li button svg {
+    margin-left: 5px;
+}
+
+.dropdown-menu {
+    width: 469px;
+    border: 1px solid #dee2e6!important;
+    padding: 0 !important;
+    margin-top: 10px !important;
+    max-height: 400px;
+    overflow:auto;
+}
+.stats-dropdown{
+    width: 100px;
+}
+
+.dropdown-menu  a {border-bottom: 1px solid rgba(0,0,0,.125) !important;display: flex;align-items: center;padding: 10px;position: relative;}
+
+.dropdown-menu a span {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 10px;
+    min-width: 32px;
+}
+
+.dropdown-menu a span img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dropdown-menu a p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: -10px;
+}
+
+.dropdown-item.active, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:hover {
+    color: #000 !important;
+    background-color: hsla(0,0%,92.5%,.95)!important;
+    box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+
+.dropdown-menu a p b {
+    color: #3CB371;
+}
+
+.dropdown-menu a i {
+    position: absolute;
+    bottom: 1px;
+    right: 10px;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.dropdown-menu a p strong {
+    font-style: normal;
+    font-weight: 400;
+}
+.mode-sound-wrap button {
+    display: flex;
+    align-items: center;
+    height: 38px;
+}
+
+.mode-sound-wrap button svg {
+    margin-left: 5px;
+}
+.sound-link{
+    width:38px;
+    padding:0 !important;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.sound-link svg{
+    margin: 0 !important;
+    width: 18px !important;
+    height: 18px !important;
+    min-width: 18px !important;
+}
+.text-gold{
+    color:#F5A500;
+    font-weight:bold !important; 
+}

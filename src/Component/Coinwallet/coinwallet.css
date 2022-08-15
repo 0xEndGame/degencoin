@@ -1,0 +1,164 @@
+.coinwallet {
+    max-width: 768px;
+    margin: 0  auto;
+    padding: 30px 15px;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.coinwallet h1 {
+    text-align: center;
+    font-size: 1.75rem;
+    color:#fff;
+    font-weight: 500;
+}
+
+.coin-icon {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 25px auto 15px;
+}
+
+.coin-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.btn-purple.btn {
+    background-color: #4e44ce;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    width:max-content;
+    align-items: center;
+    font-family: "Inter","Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+.btn-purple.btn:hover{
+background:#3027a9;
+transition: all 0.5s;
+color:#fff;
+}
+.coinwallet h4 {
+    margin-top: 3rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+.coin-list-wrap {list-style: none;padding: 0;margin: 0;border: 1px solid rgba(0,0,0,.125); background:#fff;}
+
+.coin-list-wrap li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    cursor: context-menu;
+}
+
+.coin-list-wrap li span {
+    width: 32px;
+    height: 32px;
+    display: block;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 8px;
+    min-width: 32px;
+}
+
+.coin-list-wrap li span img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.coin-list-wrap li:hover {
+    background-color: hsla(0,0%,92.5%,.95)!important;
+    box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+
+.coin-list-wrap p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 6px;
+}
+
+.coin-list-wrap p strong {
+    color: #3CB371;
+}
+
+.coin-list-wrap i {
+    position: absolute;
+    right: 9px;
+    bottom: 3px;
+    font-size: 14px;
+    font-style: normal;
+}
+.nav-link-wrap {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    justify-content: center;
+}
+
+.nav-link-wrap li a {
+    color: #fff;
+    margin: 0 11px;
+    position: relative;
+}
+
+.nav-link-wrap li a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -11px;
+    width: 2px;
+    height: 100%;
+    background: #fff;
+}
+.modal-dialog {
+    max-width: 768px !important;
+}
+
+.modal-info {
+    max-height: 400px;
+    overflow: auto;
+}
+
+.modal-info h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.modal-info h5 {
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+}
+
+.modal-info h5.mt-4 {
+    margin-top: 40px !important;
+}
+
+.modal-footer .btn.btn-yellow {
+    font-size: 1.25rem;
+}
+.modal-info ul {
+    list-style: number;
+}
