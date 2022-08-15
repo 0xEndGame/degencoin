@@ -13,8 +13,8 @@ root.render(
   </React.StrictMode>
 );
 
-web3.eth.getAccounts().then(console.log);
-
+const accounts = await ethereum.request({ method: 'eth_accounts' });
+console.log(accounts)
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
