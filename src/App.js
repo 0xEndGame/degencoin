@@ -7,6 +7,18 @@ import Footer from "./Component/Footer/Footer";
 import web3 from './Component/web3/web3'
 
 function App() {
+  constructor(props) {
+    super(props);
+  
+  this.State = {epoch: ''};
+  }
+
+  async componentDidMount() {
+    const epoch = await multitest.methods.epoch.call();
+    this.setState({ epoch });
+  
+  }
+
   return (
     <BrowserRouter>
     <Header />
