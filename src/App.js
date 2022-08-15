@@ -4,7 +4,7 @@ import CoinWallet from "./Component/Coinwallet/coinwallet";
 import CoinConnect from "./Component/CoinConnect/CoinConnect";
 import Header from "./Component/Header/header";
 import Footer from "./Component/Footer/Footer";
-import web3 from './Component/web3/./web3'
+import web3 from './Component/web3/web3.js'
 
 function App() {
   console.log(web3.version);
