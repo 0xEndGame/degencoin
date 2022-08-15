@@ -5,6 +5,7 @@ import CoinConnect from "./Component/CoinConnect/CoinConnect";
 import Header from "./Component/Header/header";
 import Footer from "./Component/Footer/Footer";
 import web3 from './Component/web3/web3'
+import multitest from './Component/web3/multitest'
 
 function App() {
   constructor(props) {
@@ -18,6 +19,7 @@ function App() {
     this.setState({ epoch });
   
   }
+
 
   return (
     <BrowserRouter>
