@@ -8,7 +8,7 @@ import web3 from './Component/web3/web3'
 
 function App() {
   return (
-    console.log(web3.version);
+    console.log(web3.version)
     <BrowserRouter>
     <Header />
       <Routes>
