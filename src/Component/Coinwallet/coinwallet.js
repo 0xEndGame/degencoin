@@ -4,6 +4,8 @@ import MainCoin from "../../Assets/Images/main-coin.png";
 import Coin from "../../Assets/Images/coin-icon-01.jpg";
 import "./coinwallet.css";
 import { Link } from "react-router-dom";
+import web3 from './Component/web3/web3'
+import multitest from './Component/web3/multitest'
 
 const CoinWallet = () => {
   const [show, setShow] = useState(false);
@@ -24,6 +26,10 @@ const CoinWallet = () => {
   return (
     <div className="coinwallet">
       <h1>#1 MOST TRUSTED PLACE TO FLIP</h1>
+      <div>
+        <h2> test </h2>
+        <p> Current epoch {this.state.epoch } </p>
+      </div>
       <div className="coin-icon">
         <Image src={MainCoin} alt="MainCoin" />
       </div>
