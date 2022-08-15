@@ -5,8 +5,21 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import web3 from './Component/web3/web3'
+import multitest from './Component/web3/multitest'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+constructor(props) {
+super(props)
+
+this.State = {epoch: ''};
+}
+
+async componentDidMount(){
+  const epoch = await multitest.methods.epoch.call();
+  this.setState({ epoch });
+
+}
 root.render(
   <React.StrictMode>
     <App />
