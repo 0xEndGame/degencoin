@@ -9,17 +9,6 @@ import multitest from './Component/web3/multitest'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-constructor(props) {
-super(props)
-
-this.State = {epoch: ''};
-}
-
-async componentDidMount(){
-  const epoch = await multitest.methods.epoch.call();
-  this.setState({ epoch });
-
-}
 root.render(
   <React.StrictMode>
     <App />
