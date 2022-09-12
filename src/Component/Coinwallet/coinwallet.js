@@ -22,9 +22,7 @@ const CoinWallet = () => {
   const ThirdhandleClose = () => ThirdsetShow(false);
   const ThirdhandleShow = () => ThirdsetShow(true);
 
-  document.getElementById('btn btn-purple').addEventListener('click', event => {
-    window.ethereum.request({ method: "eth_requestAccounts" });
-  })
+
 
   return (
     <div className="coinwallet">
@@ -239,6 +237,8 @@ const CoinWallet = () => {
           </Button>
         </Modal.Footer>
       </Modal>
+
+
 
       <Modal show={Thirdshow} onHide={ThirdhandleClose} centered>
         <Modal.Body>
