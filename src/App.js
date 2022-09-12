@@ -8,21 +8,6 @@ import web3 from './Component/web3/web3'
 import multitest from './Component/web3/multitest'
 
 function App() {
-//  constructor(props){
-//    super(props);
-//  
-//  this.State = {epoch: ''};
-//  }
-state = {
-  epoch: ''
-};
-
-async componentDidMount() {
-  const epoch = multitest.methods.epoch().call();
-  this.setState({ epoch });
-  console.log(epoch);
-}
-
   return (
     <BrowserRouter>
     <Header />
