@@ -6,12 +6,14 @@ import "./coinwallet.css";
 import { Link } from "react-router-dom";
 import Web3 from "web3";
 
+async function login() {
+  window.ethereum.request({ method: "eth_requestAccounts" });
+ 
+  const web3 = new Web3(window.ethereum);
+}
+
 const CoinWallet = () => {
   const [show, setShow] = useState(false);
-
-  const ConnectWallet = () => {
-    window.ethereum.request({ method: "eth_requestAccounts" });
-  }
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -33,7 +35,7 @@ const CoinWallet = () => {
       <div className="coin-icon">
         <Image src={MainCoin} alt="MainCoin" />
       </div>
-      <Link to="/coin-connect" className="btn btn-purple" onClick="ConnectWallet()">
+      <Link to="/coin-connect" id="login-btn" className="btn btn-purple">
         Select Wallet
       </Link>
       <h4>RECENT PLAYS</h4>
@@ -269,6 +271,6 @@ const CoinWallet = () => {
     </div>
   );
 };
-
+document.getElementById("login-btn").onclick = login;
 
 export default CoinWallet;
