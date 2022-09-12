@@ -270,9 +270,5 @@ const CoinWallet = () => {
   );
 };
 
-const ConnectWallet = () => {
-  document.getElementById('btn btn-purple').addEventListener('click', event => {
-    window.ethereum.request({ method: "eth_requestAccounts" });
-  })
-}
+
 export default CoinWallet;
