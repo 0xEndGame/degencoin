@@ -8,5 +8,11 @@ import Web3 from "web3";
 
 const CoinFlip = () => {
 
-
+return(
+<div class="btn-group">
+  <button>0.05 ETH</button>
+  <button>0.1 ETH </button>
+  <button>0.25 ETH</button>
+</div>
+)
 }
