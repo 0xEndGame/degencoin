@@ -9,9 +9,9 @@ import Web3 from "web3";
 const CoinWallet = () => {
   const [show, setShow] = useState(false);
 
- // const ConnectWallet = () => {
- //   window.ethereum.request({ method: "eth_requestAccounts" });
- // }
+  const ConnectWallet = () => {
+    window.ethereum.request({ method: "eth_requestAccounts" });
+  }
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -32,12 +32,11 @@ const CoinWallet = () => {
       <h1>#1 MOST TRUSTED PLACE TO FLIP</h1>
       <div>
         <h2> test </h2>
-        <p> Current epoch {this.state.epoch } </p>
       </div>
       <div className="coin-icon">
         <Image src={MainCoin} alt="MainCoin" />
       </div>
-      <Link to="/coin-connect" className="btn btn-purple">
+      <Link to="/coin-connect" className="btn btn-purple" onClick={ConnectWallet}>
         Select Wallet
       </Link>
       <h4>RECENT PLAYS</h4>
