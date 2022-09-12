@@ -30,13 +30,10 @@ const CoinWallet = () => {
   return (
     <div className="coinwallet">
       <h1>#1 MOST TRUSTED PLACE TO FLIP</h1>
-      <div>
-        <h2> test </h2>
-      </div>
       <div className="coin-icon">
         <Image src={MainCoin} alt="MainCoin" />
       </div>
-      <Link to="/coin-connect" className="btn btn-purple" onClick={ConnectWallet}>
+      <Link to="/coin-connect" className="btn btn-purple" onClick="ConnectWallet()">
         Select Wallet
       </Link>
       <h4>RECENT PLAYS</h4>
