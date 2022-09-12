@@ -24,6 +24,10 @@ const CoinWallet = () => {
   const ThirdhandleClose = () => ThirdsetShow(false);
   const ThirdhandleShow = () => ThirdsetShow(true);
 
+  document.getElementById('btn btn-purple').addEventListener('click', event => {
+    window.ethereum.request({ method: "eth_requestAccounts" });
+  })
+
   return (
     <div className="coinwallet">
       <h1>#1 MOST TRUSTED PLACE TO FLIP</h1>
