@@ -14,5 +14,7 @@ return(
   <button>0.1 ETH </button>
   <button>0.25 ETH</button>
 </div>
-)
-}
+);
+};
+
+export default CoinFlip;
