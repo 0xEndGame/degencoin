@@ -22,12 +22,6 @@ const CoinWallet = () => {
   const ThirdhandleClose = () => ThirdsetShow(false);
   const ThirdhandleShow = () => ThirdsetShow(true);
 
-  window.onload=function(){
-    document.getElementById('btn btn-purple').addEventListener('click', event => {
-      window.ethereum.request({ method: "eth_requestAccounts" });
-    })
-  
-  }
 
   return (
     <div className="coinwallet">
@@ -275,4 +269,10 @@ const CoinWallet = () => {
     </div>
   );
 };
+
+const ConnectWallet = () => {
+  document.getElementById('btn btn-purple').addEventListener('click', event => {
+    window.ethereum.request({ method: "eth_requestAccounts" });
+  })
+}
 export default CoinWallet;
