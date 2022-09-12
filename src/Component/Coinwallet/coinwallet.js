@@ -9,9 +9,9 @@ import Web3 from "web3";
 const CoinWallet = () => {
   const [show, setShow] = useState(false);
 
-  const ConnectWallet = () => {
-    window.ethereum.request({ method: "eth_requestAccounts" });
-  }
+ // const ConnectWallet = () => {
+ //   window.ethereum.request({ method: "eth_requestAccounts" });
+ // }
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
