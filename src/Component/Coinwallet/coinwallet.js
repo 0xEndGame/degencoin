@@ -10,6 +10,7 @@ async function login() {
   window.ethereum.request({ method: "eth_requestAccounts" });
  
   const web3 = new Web3(window.ethereum);
+  console.log("test");
 }
 
 const CoinWallet = () => {
@@ -35,7 +36,7 @@ const CoinWallet = () => {
       <div className="coin-icon">
         <Image src={MainCoin} alt="MainCoin" />
       </div>
-      <Link to="/coin-connect" onClick={login} id="login-btn" className="btn btn-purple">
+      <Link onClick={login} id="login-btn" className="btn btn-purple">
         Select Wallet
       </Link>
       <h4>RECENT PLAYS</h4>
