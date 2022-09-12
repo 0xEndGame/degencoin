@@ -271,6 +271,11 @@ const CoinWallet = () => {
     </div>
   );
 };
+
+
+window.onload = function(){ 
 document.getElementById("login-btn").onclick = login;
+}; 
+
 
 export default CoinWallet;
