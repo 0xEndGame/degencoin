@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.css';
 import CoinWallet from "./Component/Coinwallet/coinwallet";
 import CoinConnect from "./Component/CoinConnect/CoinConnect";
+import CoinConnect from "./Component/CoinConnect/CoinFlip";
 import Header from "./Component/Header/header";
 import Footer from "./Component/Footer/Footer";
 import web3 from './Component/web3/web3'
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={ <CoinWallet /> } />
         <Route path="/coin-connect" element={ <CoinConnect/> } />
+        <Route path="/coinflip" element={ <CoinFlip/> } />
       </Routes>
       <Footer />
     </BrowserRouter>
