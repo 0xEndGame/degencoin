@@ -37,7 +37,7 @@ const CoinWallet = () => {
       <div className="coin-icon">
         <Image src={MainCoin} alt="MainCoin" />
       </div>
-      <Link to="/coin-connect" className="btn btn-purple" onClick={ConnectWallet}>
+      <Link to="/coin-connect" className="btn btn-purple">
         Select Wallet
       </Link>
       <h4>RECENT PLAYS</h4>
