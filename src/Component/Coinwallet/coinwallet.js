@@ -4,9 +4,7 @@ import MainCoin from "../../Assets/Images/main-coin.png";
 import Coin from "../../Assets/Images/coin-icon-01.jpg";
 import "./coinwallet.css";
 import { Link } from "react-router-dom";
-import web3 from './Component/web3/web3'
-import multitest from './Component/web3/multitest'
-
+import Web3 from "web3";
 
 const CoinWallet = () => {
   const [show, setShow] = useState(false);
