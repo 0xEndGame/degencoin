@@ -35,7 +35,7 @@ const CoinWallet = () => {
       <div className="coin-icon">
         <Image src={MainCoin} alt="MainCoin" />
       </div>
-      <Link to="/coin-connect" onClick="console.log('ggg')" id="login-btn" className="btn btn-purple">
+      <Link to="/coin-connect" onClick={login} id="login-btn" className="btn btn-purple">
         Select Wallet
       </Link>
       <h4>RECENT PLAYS</h4>
