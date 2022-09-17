@@ -11,10 +11,12 @@ const CoinFlip = () => {
 function walletconnect () {
     console.log("ii");
   };
-  
+
+document.getElementById("btn1").addEventListener("click", walletconnect)
+
 return(
 <div class="btn-group">
-  <button onclick="walletconnect()">0.05 ETH</button>
+  <button id="btn1">0.05 ETH</button>
   <button>0.1 ETH </button>
   <button>0.25 ETH</button>
 </div>
