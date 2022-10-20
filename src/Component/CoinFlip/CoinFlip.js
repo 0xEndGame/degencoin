@@ -22,7 +22,7 @@ const getData = () => {
     }
     console.log("the epoch is: ", res)
   })
-  }
+  
 };
 
 return(
