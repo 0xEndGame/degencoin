@@ -8,10 +8,13 @@ import Web3 from "web3";
 
 const CoinFlip = () => {
 
+document.getElementById("walletConnect").onclick = function () { alert('hello!');};
 
 return(
 <div class="btn-group">
   <button id="walletConnect">Connect your wallet you degen</button>
+
+  
 
 </div>
 );
