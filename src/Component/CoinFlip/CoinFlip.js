@@ -8,11 +8,6 @@ import Web3 from "web3";
 
 const CoinFlip = () => {
 
-function walletconnect () {
-    console.log("ii");
-  };
-
-document.getElementById("btn1").addEventListener("click", walletconnect)
 
 return(
 <div class="btn-group">
