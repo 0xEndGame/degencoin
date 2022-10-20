@@ -11,9 +11,8 @@ const CoinFlip = () => {
 
 return(
 <div class="btn-group">
-  <button id="btn1">0.05 ETH</button>
-  <button>0.1 ETH </button>
-  <button>0.25 ETH</button>
+  <button id="walletConnect">Connect your wallet you degen</button>
+
 </div>
 );
 };
