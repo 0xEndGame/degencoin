@@ -4,7 +4,8 @@
     color: white; /* White text */
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
-    float: left; /* Float the buttons side by side */
+    float: flex; /* Float the buttons side by side */
+
   }
   
   .btn-group button:not(:last-child) {
