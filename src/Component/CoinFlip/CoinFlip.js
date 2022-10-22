@@ -13,7 +13,7 @@ const CoinFlip = () => {
 const walletConnector = () => {
   window.ethereum.request({ method: "eth_requestAccounts" });
   var walletadr = document.getElementById("wallet_address").value 
-  console.log(wallet_address);
+  console.log(walletadr);
   };
 
 const getData = () => {
