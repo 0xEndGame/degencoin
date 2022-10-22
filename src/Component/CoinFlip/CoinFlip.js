@@ -40,3 +40,4 @@ return(
 };
 
 export default CoinFlip;
+
