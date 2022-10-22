@@ -26,13 +26,22 @@ const getData = () => {
 };
 
 return(
-<div class="btn-group">
-  <button id="walletConnect" onClick={walletConnector}>Connect your wallet you degen</button>
-
-  <button id="scTest" onClick={getData}> Request Data</button>
-
+<div class="body">
+<div class="bg">
+  <video class="bg-video" autoplay loop id="myVideo">
+  <source src="https://ik.imagekit.io/bayc/assets/club-landing.mp4"></source>
+  </video>
 </div>
 
+
+<div class="btn-group">
+  
+  
+  <button id="walletConnect" onClick={walletConnector}>Enter</button>
+
+  
+</div>
+</div>
 );
 
 
