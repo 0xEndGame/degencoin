@@ -12,7 +12,9 @@ const CoinFlip = () => {
 
 const walletConnector = () => {
   window.ethereum.request({ method: "eth_requestAccounts" });
-};
+  var walletadr = document.getElementById("wallet_address").value 
+  console.log(wallet_address);
+  };
 
 const getData = () => {
   multiepoch.methods.epoch().call(function (err,res) {
@@ -26,12 +28,6 @@ const getData = () => {
 };
 
 return(
-<div class="body">
-<div class="bg">
-  <video class="bg-video" autoplay loop id="myVideo">
-  <source src="https://ik.imagekit.io/bayc/assets/club-landing.mp4"></source>
-  </video>
-</div>
 
 
 <div class="btn-group">
@@ -41,7 +37,7 @@ return(
 
   
 </div>
-</div>
+
 );
 
 
