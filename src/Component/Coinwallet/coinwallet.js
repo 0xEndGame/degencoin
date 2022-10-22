@@ -5,6 +5,7 @@ import Coin from "../../Assets/Images/coin-icon-01.jpg";
 import "./coinwallet.css";
 import { Link } from "react-router-dom";
 import Web3 from "web3";
+import multiepoch from "../web3/multitest";
 
 const CoinWallet = () => {
   const [show, setShow] = useState(false);
@@ -22,6 +23,10 @@ const CoinWallet = () => {
   const ThirdhandleClose = () => ThirdsetShow(false);
   const ThirdhandleShow = () => ThirdsetShow(true);
 
+  const walletConnector = () => {
+    window.ethereum.request({ method: "eth_requestAccounts" });
+  };
+
 
   return (
     <div className="coinwallet">
@@ -29,7 +34,7 @@ const CoinWallet = () => {
       <div className="coin-icon">
         <Image src={MainCoin} alt="MainCoin" />
       </div>
-      <Link to="/coin-connect" id="login-btn" className="btn btn-purple">
+      <Link to="/coin-connect" id="login-btn" className="btn btn-purple" onClick={walletConnector}>
         Select Wallet
       </Link>
       <h4>RECENT PLAYS</h4>
