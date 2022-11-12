@@ -30,18 +30,13 @@ const getData = () => {
 };
 
 return(
-
-
-<div class="btn-group">
-  
-<p id="output"></p>
   
 
 <div class="body">
-
+<p id="output"></p>
 </div>
   
-</div>
+
 
 );
 
