@@ -8,7 +8,7 @@ import Web3 from "web3";
 import multiepoch from "../web3/multitest";
 
 
-const CoinFlip = () => {
+const Uniswap = () => {
 
 const walletConnector = () => {
   window.ethereum.request({ method: "eth_requestAccounts" });
@@ -23,6 +23,8 @@ const getData = () => {
       return
     }
     console.log("the epoch is: ", res)
+    document.getElementById('Test1').innerHTML = res;
+
   })
   
 };
@@ -32,9 +34,12 @@ return(
 
 <div class="btn-group">
   
-  
+  <label id="Test1"></label>
   <button id="walletConnect" onClick={walletConnector}>Enter</button>
 
+<div class="body">
+
+</div>
   
 </div>
 
@@ -44,5 +49,5 @@ return(
 
 };
 
-export default CoinFlip;
+export default Uniswap;
 
