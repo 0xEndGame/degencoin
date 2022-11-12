@@ -23,7 +23,7 @@ const getData = () => {
       return
     }
     console.log("the epoch is: ", res)
-    document.getElementById('Test1').innerHTML = res;
+    document.getElementById('output').innerHTML = res;
 
   })
   
@@ -34,7 +34,7 @@ return(
 
 <div class="btn-group">
   
-  <label id="Test1"></label>
+<p id="output"></p>
   
 
 <div class="body">
