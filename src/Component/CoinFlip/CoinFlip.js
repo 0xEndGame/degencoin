@@ -32,17 +32,13 @@ const getData = () => {
 return(
   
 
-<div class="body">
-<p id="output"></p>
-</div>
+  <div class="body">
+  <p id="output">hi</p>
+  </div>
   
+    );
 
-
-);
-
-
-
-};
+  };
 
 export default CoinFlip;
 
